@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibraheem</title>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="../js/authorization-validator.js"></script>
+
+</head>
+<body>
+    Hello, world!
+
+    <script>
+        const config = {
+            allowed_roles: ["Manage"]
+        };
+
+        let isAuthorizaed = authorizationValidator(config);
+
+        if (!isAuthorizaed){
+            window.location.href = "./404.html";
+        }
+    </script>
+</body>
+</html>

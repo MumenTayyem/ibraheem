@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jwt-decode": "^4.0.0",
+    "jwt-js-decode": "^1.9.0"
+  }
+}
