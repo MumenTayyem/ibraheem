@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibraheem</title>
     <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
-    <script src="../js/authorization-validator.js"></script>
+    <!-- <script src="../js/authorization-validator.mjs" type="module"></script> -->
 
 </head>
 <body>
     Hello, world!
 
-    <script>
+    <script type="module">
+
+        import authorizationValidator from "../js/authorization-validator.mjs";
+
         const config = {
             allowed_roles: ["Manage"]
         };

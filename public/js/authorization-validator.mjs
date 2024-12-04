@@ -1,4 +1,4 @@
-function authorizationValidator(config){
+export default function authorizationValidator(config){
     let token = localStorage.getItem("token");
 
     let decoded = jwt_decode(token);
